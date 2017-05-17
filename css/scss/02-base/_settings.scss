@@ -16,6 +16,46 @@ h1,
 h2,
 h3 {
   font-family: $r;
+  color: #282828;
+  margin-top: 0;
+}
+
+
+.section {
+  padding: 70px 0;
+}
+
+.content-block {
+  border-radius: 7px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.08);
+  p {
+      font-size: 16px;
+      line-height: 28px;    
+  }
+  &.lg-pad {
+    padding: 40px;
+  }
+  &.sm-pad {
+    padding: 10px;
+  }
+}
+
+.vid {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+ 
+.vid iframe,
+.vid object,
+.vid embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 // lAYOUT
