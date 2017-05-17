@@ -25,6 +25,29 @@ function exist(el){
 
 jQuery(document).ready(function($) {
 
+
+    /*---------------------------
+                                  Owl carousel
+    ---------------------------*/
+    $('.owl-carousel-gallery').owlCarousel({
+        items: 4,
+        margin: 4,
+        nav: false
+    });
+
+
+    $('.owl-carousel-customers').owlCarousel({
+        items: 5,
+        margin: 0,
+        nav: true,
+        dots: false,
+        navText: ['', '']
+    });
+
+
+
+
+
     /*---------------------------
                                   ADD CLASS ON SCROLL
     ---------------------------*/
