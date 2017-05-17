@@ -239,6 +239,7 @@
     padding-top:    10px;
     padding-bottom: 10px;
     line-height: $line-height-computed;
+    font-family: $r;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
@@ -661,4 +662,17 @@
       }
     }
   }
+}
+
+
+.navbar {
+    position: absolute;
+    margin: 0;
+    border: none;
+    background: $red;
+    top: 120px;
+    &.hasScrolled {
+        position: fixed;
+        top: 0;
+    }
 }
