@@ -1,16 +1,22 @@
          
 .header {
-
+    margin-bottom: 50px;
+    &__top {
+        height: 120px;
+    }
 }
 
 .navbar {
+    position: absolute;
     margin: 0;
-    background: #FFF;
-    .navbar-nav {
-        display: inline-block;
-        float: none;
-    }
+    border: none;
+    background: $red;
+    top: 120px;
     .navbar-collapse {
         text-align: center;
+    }
+    .hasScrolled {
+        position: fixed;
+        top: 0;
     }
 }

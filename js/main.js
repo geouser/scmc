@@ -30,13 +30,11 @@ jQuery(document).ready(function($) {
     ---------------------------*/
     $(function() { 
         var $document = $(document),
-            $element = $('.menu-button'),
-            $element2 = $('header'),
+            $element = $('.navbar'),
             className = 'hasScrolled';
 
         $document.scroll(function() {
-            $element.toggleClass(className, $document.scrollTop() >= 1);
-            $element2.toggleClass(className, $document.scrollTop() >= 1);
+            $element.toggleClass(className, $document.scrollTop() >= 120);
         });
     });
     
