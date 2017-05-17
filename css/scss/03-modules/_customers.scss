@@ -1,0 +1,65 @@
+.customers-section {
+    padding: 100px 0 30px;
+    background-color: #F6F6F6;
+}
+
+
+.owl-carousel-customers {
+    position: relative;
+
+    .owl-prev,
+    .owl-next {
+        position: absolute;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .owl-prev {
+        left: -85px;
+    }
+
+    .owl-next {
+        right: -85px;
+    }
+
+    .owl-stage-outer {
+        padding: 5px 0
+    }
+
+    .slide {
+        padding: 0 4px;
+    }
+
+    .content-block {
+        position: relative;
+        height: 123px;
+
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            max-width: 80%;
+            max-height: 80%;
+            width: auto;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            -webkit-filter: grayscale(100);
+            -o-filter: grayscale(100);
+            filter: grayscale(100);
+        }
+
+        &:hover img {
+            -webkit-filter: grayscale(0);
+            -o-filter: grayscale(0);
+            filter: grayscale(0);
+        }
+    }
+}
