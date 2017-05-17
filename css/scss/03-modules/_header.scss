@@ -3,7 +3,14 @@
 
 }
 
-
-/* ------------------------------------ */
-/*  NAV STYLES  */
-
+.navbar {
+    margin: 0;
+    background: #FFF;
+    .navbar-nav {
+        display: inline-block;
+        float: none;
+    }
+    .navbar-collapse {
+        text-align: center;
+    }
+}
