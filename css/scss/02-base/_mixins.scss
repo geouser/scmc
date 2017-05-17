@@ -1,0 +1,85 @@
+%clearfix {
+  *zoom: 1;
+  &:after {
+    content: '';
+    display: table;
+    line-height: 0;
+    clear: both;
+  }
+}
+
+%vertAlign {
+  *zoom: 1;
+  &:before {
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%; width: 0;
+    margin-right: 0; 
+  }
+}
+
+@mixin position($pos, $top, $right, $bottom, $left){
+  position: $pos;
+  left: $left;
+  right: $right;
+  top: $top;
+  bottom: $bottom;
+}
+
+@mixin flex($ai: center, $j: space-between, $d: row, $w: w  ) {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+
+    -webkit-align-items: $ai;
+    -ms-align-items: $ai;
+    align-items: $ai;
+
+    @if $j == flex-start {
+      -webkit-box-pack: start;
+      -ms-flex-pack: start;
+    } @else if $j == flex-end {
+      -webkit-box-pack: end;
+      -ms-flex-pack: end;
+    } @else if $j == space-between {
+      -webkit-box-pack: j;
+      -ms-flex-pack: j;
+    } @else if $j == space-around {
+      -ms-flex-pack: distribute;    
+    } @else {
+      -webkit-box-pack: $j;
+      -ms-flex-pack: $j;
+    }
+    -webkit-j-content: $j;
+    -moz-j-content: $j;
+    j-content: $j;
+
+    -webkit-flex-d: $d;
+    -ms-flex-d: $d;
+    flex-d: $d; 
+
+    -webkit-flex-w: $w;
+    -ms-flex-w: $w;
+    flex-w: $w;
+}
+
+@mixin transition($style, $duration){
+  -webkit-transition: $style $duration;
+   -ms-transition: $style $duration;
+   transition: $style $duration;
+}
+
+@mixin transform($transforms){
+  -webkit-transform: $transforms;
+   -ms-transform: $transforms;
+   transform: $transforms;
+}
+
+@mixin textEnd($overflow: ellipsis){
+  overflow: hidden;
+  white-space: now;
+  text-overflow: $overflow; // values are: clip, ellipsis, or a string
+}
