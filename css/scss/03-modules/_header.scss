@@ -3,6 +3,54 @@
     margin-bottom: 50px;
     &__top {
         height: 120px;
+        .row {
+            height: 100%;
+        }
+        .col-xs-6 {
+            height: 100%;
+            &:first-of-type {
+                text-align: left;
+            }
+            &:last-of-type {
+                text-align: right;
+            }
+            &:before {
+                content: '';
+                display: inline-block;
+                vertical-align: middle;
+                height: 100%;
+            }
+        }
+    }
+}
+
+.contact-block {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 35px;
+    background-image: url("../images/smartphone.png");
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    a {
+        display: block;
+        text-align-last: right;
+        font-size: 16px;
+        font-weight: 400;
+        color: #5E5E5E;
+        &[href ^= 'tel:'] {
+            font-size: 26px;
+            color: #de363c;
+            font-weight: 700;
+            line-height: 1;
+        }
+    }
+}
+
+.logo {
+    display: inline-block;
+    width: 170px;
+    img {
+        width: 100%;
     }
 }
 
@@ -12,10 +60,7 @@
     border: none;
     background: $red;
     top: 120px;
-    .navbar-collapse {
-        text-align: center;
-    }
-    .hasScrolled {
+    &.hasScrolled {
         position: fixed;
         top: 0;
     }

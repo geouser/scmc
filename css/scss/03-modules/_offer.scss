@@ -35,7 +35,7 @@
                 display: -webkit-flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;  
+                align-items: flex-start;  
             }
         }
     }
@@ -44,15 +44,27 @@
 .hero {
     color: #fff;
     text-align: left;
+    width: 670px;
+    max-width: 100%;
     h1,
     h2 {
-        font-size: 6em;    
+        font-size: 45px; 
+        line-height: 62px;   
         font-weight: bold;
         margin: 0;
         padding: 0;
         b {
             text-transform: uppercase;
         }
+    }
+    p {
+        font-size: 18px;
+        line-height: 27px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-top: 30px;
     }
 }
 
@@ -74,9 +86,16 @@
 }
 
 
-@media screen and (min-width: 980px){
-    .hero { width: 980px; }    
-}
-@media screen and (max-width: 640px){
-    .hero h1 { font-size: 4em; }    
+.carousel-control {
+    z-index: 10;
+    img {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 30px;
+        height: 30px;
+    }
 }
