@@ -136,6 +136,12 @@ a.btn {
 // Danger and error appear as red
 .btn-danger {
   @include button-variant($btn-danger-color, $btn-danger-bg, $btn-danger-border);
+  &--dark {
+    background-color: #9e1116;
+    &:hover {
+      background-color: #8A0A0F;
+    }
+  }
 }
 
 

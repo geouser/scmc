@@ -32,6 +32,12 @@ h3 {
   text-align: left;
   margin-bottom: 40px;
 }
+.white {
+  h1,h2,h3,p,strong,span {
+    color: #FFF;
+  }
+}
+
 
 .bg {
   background-color: #f1f1f1;
@@ -72,6 +78,18 @@ h3 {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.attention-section {
+  padding: 40px 0;
+  background-color: $red;
+  p {
+    line-height: 25px;
+    padding: 0 7%;
+  }
+  .btn {
+    margin-top: 25px;
+  }
 }
 
 // lAYOUT
