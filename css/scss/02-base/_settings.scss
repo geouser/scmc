@@ -5,7 +5,11 @@ html,
 body {
 	height: 100%;
 }
+
 body {
+    font-family: $n;
+    font-size: 14px;
+    color: $text;
 }
 
 // lAYOUT
