@@ -20,7 +20,7 @@
 /*-------------------------------
       Slides backgrounds     
 -------------------------------*/
-.carousel {
+.carousel:not(.carousel--thumbnails) {
     height: 520px;
     .carousel-inner {
         height: 100%;
