@@ -1,0 +1,111 @@
+.site-footer {
+    &__top {
+        background-color: #363636;
+        padding: 60px 0 35px;
+        color: #acacac;
+
+        @media (max-width: 991px) {
+            font-size: 11px;
+        }
+    }
+
+
+
+    &__bottom {
+        color: #656565;
+        background-color: #111111;
+        padding: 15px 0;
+        font-size: 12px;
+
+        p {
+            margin-bottom: 0;
+            line-height: 20px;
+        }
+    }
+}
+
+
+
+.widget {
+    &-menu {
+        -webkit-columns: 2;
+        -moz-columns: 2;
+        -o-columns: 2;
+        columns: 2;
+        -webkit-column-gap: 15px;
+        -moz-column-gap: 15px;
+        -o-column-gap: 15px;
+        column-gap: 15px;
+    }
+
+
+    &-address {
+        @media (min-width: 992px) {
+            p {
+                margin-bottom: 5px;
+            }    
+        }
+        
+        @media (min-width: 992px) {
+            address {
+                padding-left: 21px;
+                line-height: 23px;
+            }    
+        }
+    }
+
+    &-contacts {
+        @media (min-width: 992px) {
+            p {
+                margin-bottom: 16px;
+            }
+        }
+
+        a {
+            color: inherit;
+        }
+    }
+
+    &-logo {
+        img {
+            display: block;
+            width: 100%;
+        }
+    }
+}
+
+
+.footer-menu {
+    ul {
+        padding-left: 0;
+    }
+
+    .menu-item {
+        list-style: none;
+        display: block;
+        margin-bottom: 9px;
+
+        a {
+            color: inherit;
+        }
+    }
+}
+
+
+.footer-socials {
+    margin: 0 -6px;
+    line-height: 20px;
+
+    a {
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        font-size: 18px;
+        color: inherit;
+        margin: 0 6px;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+}
