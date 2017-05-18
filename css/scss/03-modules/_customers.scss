@@ -1,11 +1,22 @@
 .customers-section {
-    padding: 100px 0 30px;
     background-color: #F6F6F6;
+
+    @media (min-width: 768px) {
+        padding: 100px 0 30px;
+    }
 }
 
 
 .owl-carousel-customers {
     position: relative;
+
+    @media (max-width: 1350px) {
+        padding: 0 15px;
+    }
+
+    @media (max-width: 767px) {
+        padding: 0 30px;
+    }
 
     .owl-prev,
     .owl-next {
@@ -19,10 +30,26 @@
 
     .owl-prev {
         left: -85px;
+
+        @media (max-width: 1350px) {
+            left: -15px;
+        }
+
+        @media (max-width: 767px) {
+            left: 0;
+        }
     }
 
     .owl-next {
         right: -85px;
+
+        @media (max-width: 1350px) {
+            right: -15px;
+        }
+
+        @media (max-width: 767px) {
+            right: 0;
+        }
     }
 
     .owl-stage-outer {

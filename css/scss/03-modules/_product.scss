@@ -1,6 +1,10 @@
 .product-card {
-    width: 265px;
+    width: 100%;
     text-align: center;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+
     p {
         font-size: 14px;
         line-height: 22px;
@@ -29,7 +33,8 @@
             margin-right: -2px;
         }
         img {
-            display: inline-block;
+            display: inline-block!important;
+            width: auto!important;
             vertical-align: middle;
             max-width: 95%;
             max-height: 95%;
@@ -59,4 +64,22 @@
 .carousel--products {
     width: 860px;
     max-width: 100%;
+    position: relative;
+    padding-bottom: 35px;
+
+    .owl-next {
+        position: absolute;
+        right: 0;
+        bottom: -37px;
+    } 
+
+    .owl-prev {
+        position: absolute;
+        right: 40px;
+        bottom: -37px;
+    }
+
+    .owl-stage-outer {
+        padding: 5px 0;
+    }
 }

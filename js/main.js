@@ -32,7 +32,21 @@ jQuery(document).ready(function($) {
     $('.owl-carousel-gallery').owlCarousel({
         items: 4,
         margin: 4,
-        nav: false
+        nav: false,
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 2,
+            },
+            // breakpoint from 480 up
+            480 : {
+                items: 3,
+            },
+            // breakpoint from 768 up
+            768 : {
+                items: 4,
+            }
+        }
     });
 
 
@@ -41,9 +55,49 @@ jQuery(document).ready(function($) {
         margin: 0,
         nav: true,
         dots: false,
-        navText: ['', '']
+        navText: ['', ''],
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 2,
+            },
+            // breakpoint from 480 up
+            480 : {
+                items: 3,
+            },
+            // breakpoint from 768 up
+            768 : {
+                items: 4,
+            },
+            // breakpoint from 768 up
+            992 : {
+                items: 5,
+            }
+        }
     });
 
+
+    $('.owl-carousel-products').owlCarousel({
+        items: 3,
+        margin: 20,
+        nav: true,
+        dots: false,
+        navText: ['', ''],
+        responsive : {
+            // breakpoint from 0 up
+            0 : {
+                items: 1,
+            },
+            // breakpoint from 480 up
+            480 : {
+                items: 2,
+            },
+            // breakpoint from 480 up
+            768 : {
+                items: 3,
+            }
+        }
+    });
 
 
 

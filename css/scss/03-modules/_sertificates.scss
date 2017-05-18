@@ -7,7 +7,12 @@
         a {
             display: inline-block;
             vertical-align: middle;
-            margin: 0 35px;
+            margin: 10px 15px;
+
+            @media (min-width: 1200px) {
+                margin: 0 35px;
+            }
+            
 
             img {
                 display: block;
