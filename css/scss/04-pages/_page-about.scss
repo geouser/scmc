@@ -1,6 +1,9 @@
 
 .advantages-list {
   margin-top: 60px;
+  @media only screen and (max-width : 480px) {
+    margin-top: 40px;
+  }
 }
 .image-text-block {
   padding: 20px;
