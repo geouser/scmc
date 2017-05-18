@@ -20,9 +20,10 @@
   text-transform: uppercase;
   @include button-size($padding-base-vertical, $padding-base-horizontal, $font-size-base, $line-height-base, $btn-border-radius-base);
   @include user-select(none);
-  padding: 10px 16px 8px;
+  padding: 10px 20px 8px;
   font-size: 12px;
-  
+  font-family: $r;
+  letter-spacing: .07em;
   &,
   &:active,
   &.active {

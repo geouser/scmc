@@ -100,7 +100,7 @@
     h2 {
         font-size: 45px; 
         line-height: 62px;   
-        font-weight: bold;
+        font-weight: 600;
         margin: 0;
         padding: 0;
         color: #FFF;
@@ -112,7 +112,9 @@
              -o-transition: 1s all ease-in-out .1s; 
                 transition: 1s all ease-in-out .1s; 
         b {
+            font-size: 50px;
             text-transform: uppercase;
+            font-weight: 600;
         }
         @media only screen and (max-width : 1200px) {
             font-size: 40px;
@@ -154,7 +156,7 @@
         }
     }
     .btn {
-        margin-top: 30px;
+        margin-top: 34px;
         opacity: 0;
         -webkit-transition: .4s all ease-in-out 1.5s;
            -moz-transition: .4s all ease-in-out 1.5s; 
