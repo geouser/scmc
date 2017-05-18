@@ -387,13 +387,13 @@
 .list-group-item.active,
 .list-group-item.active:hover,
 .list-group-item.active:focus {
-  text-shadow: 0 -1px 0 #286090;
-  background-image: -webkit-linear-gradient(top, #337ab7 0%, #2b669a 100%);
-  background-image: -o-linear-gradient(top, #337ab7 0%, #2b669a 100%);
-  background-image: linear-gradient(to bottom, #337ab7 0%, #2b669a 100%);
+  text-shadow: 0 -1px 0 #183967;
+  background-image: -webkit-linear-gradient(top, #225090 0%, #1b3f71 100%);
+  background-image: -o-linear-gradient(top, #225090 0%, #1b3f71 100%);
+  background-image: linear-gradient(to bottom, #225090 0%, #1b3f71 100%);
   background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF337AB7', endColorstr='#FF2B669A', GradientType=0);
-  border-color: #2b669a; }
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF225090', endColorstr='#FF1B3F71', GradientType=0);
+  border-color: #1b3f71; }
   .list-group-item.active .badge,
   .list-group-item.active:hover .badge,
   .list-group-item.active:focus .badge {
