@@ -29,9 +29,22 @@ h3 {
     margin-bottom: 45px;
   }
 }
-.secton-title {
-  text-align: left;
+.section-title {
   margin-bottom: 40px;
+  &.big {
+    h1,h2 {
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+  }
+  &.blue {
+    h1,h2 {
+      color: $blue;
+    }
+  }
+  &.text-center {
+    text-align: center;
+  }
 }
 .white {
   h1,h2,h3,p,strong,span {
@@ -61,6 +74,9 @@ h3 {
   }
   &.sm-pad {
     padding: 10px;
+  }
+  &.md-pad {
+    padding: 20px;
   }
 }
 
@@ -93,5 +109,8 @@ h3 {
   }
 }
 
+
 // lAYOUT
 // ---------------------------
+
+
