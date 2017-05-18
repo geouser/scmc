@@ -22,6 +22,17 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/Raleway-ExtraBold.eot');
+    src: url('../fonts/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Raleway-ExtraBold.woff2') format('woff2'),
+         url('../fonts/Raleway-ExtraBold.woff') format('woff'),
+         url('../fonts/Raleway-ExtraBold.ttf') format('truetype'),
+         url('../fonts/Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+}
 
 
 
