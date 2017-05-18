@@ -57,6 +57,9 @@
   font-size: 17px;
   // Place the border on the list items and negative margin up for better styling
   background-color: $list-group-bg;
+  @media only screen and (max-width : 480px) {
+    font-size: 14px;
+  }
 }
 
 

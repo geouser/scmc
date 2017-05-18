@@ -388,7 +388,7 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Navbar toggle
-$navbar-default-toggle-hover-bg:           #ddd !default;
+$navbar-default-toggle-hover-bg:           $red !default;
 $navbar-default-toggle-icon-bar-bg:        #fff !default;
 $navbar-default-toggle-border-color:       #ddd !default;
 

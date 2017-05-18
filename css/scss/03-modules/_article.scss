@@ -10,6 +10,13 @@
         margin-bottom: 40px;
         border-left: 4px solid $red;
         line-height: 1;
+        @media only screen and (max-width : 991px) {
+            margin-bottom: 20px;
+            font-size: 26px;
+        }
+        @media only screen and (max-width : 480px) {
+            font-size: 22px;
+        }
     }
     p {
         margin-bottom: 40px;
@@ -17,5 +24,16 @@
         &:last-child {
             margin-bottom: 0;
         }
+        @media only screen and (max-width : 991px) {
+            line-height: 1.6;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        @media only screen and (max-width : 480px) {
+            font-size: 14px;
+        }
+    }
+    @media only screen and (max-width : 991px) {
+        padding: 40px 0;
     }
 }
