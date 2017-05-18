@@ -21,7 +21,9 @@
 .navbar-header {
   @include clearfix;
   background-color: #FFF;
-  
+  @media only screen and (max-width : 767px) {
+    background: transparent;
+  }
   @media (min-width: $grid-float-breakpoint) {
     float: left;
   }
@@ -241,6 +243,7 @@
     line-height: $line-height-computed;
     font-family: $r;
     font-weight: 600;
+    transition: all .2s;
   }
 
   @media (max-width: $grid-float-breakpoint-max) {
@@ -444,7 +447,6 @@
   }
 
   .navbar-toggle {
-    border-color: $navbar-default-toggle-border-color;
     &:hover,
     &:focus {
       background-color: $navbar-default-toggle-hover-bg;
@@ -675,5 +677,11 @@
     &.hasScrolled {
         position: fixed;
         top: 0;
+    }
+    @media only screen and (max-width : 767px) {
+      background: transparent;
+    }
+    @media only screen and (max-width : 480px) {
+      top: 100px;
     }
 }

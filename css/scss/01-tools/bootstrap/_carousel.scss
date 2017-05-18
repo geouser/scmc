@@ -118,7 +118,10 @@
   background-color: rgba(0, 0, 0, .6); // Fix IE9 click-thru bug
   // We can't have this transition here because WebKit cancels the carousel
   // animation if you trip this while in the middle of another animation.
-  
+  @media only screen and (max-width : 767px) {
+    width: 30px;
+    height: 50px;
+  }
   &.round {
     width: 20px;
     height: 20px;
