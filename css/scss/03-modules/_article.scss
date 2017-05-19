@@ -1,24 +1,7 @@
 .article {
     padding-bottom: 110px;
     padding-top: 10px;
-    h1 {
-        color: #0667A0;
-        font-size: 30px;
-        font-weight: 800;
-        display: block;
-        padding-left: 18px;
-        text-transform: uppercase;
-        margin-bottom: 40px;
-        border-left: 4px solid $red;
-        line-height: 1;
-        @media only screen and (max-width : 991px) {
-            margin-bottom: 20px;
-            font-size: 26px;
-        }
-        @media only screen and (max-width : 480px) {
-            font-size: 22px;
-        }
-    }
+    
     em {
         font: 19px/36px "Arial";
         display: block;
