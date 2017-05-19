@@ -183,7 +183,7 @@ jQuery(document).ready(function($) {
 
         var mapOptions = {
             center: mapCenterCoord,
-            zoom: 17,
+            zoom: 16,
             //draggable: false,
             disableDefaultUI: true,
             scrollwheel: false,
@@ -191,12 +191,12 @@ jQuery(document).ready(function($) {
         };
 
         map = new google.maps.Map(document.getElementById('map_canvas'), mapOptions);
-        var markerImage = new google.maps.MarkerImage('images/location.png');
+        var markerImage = new google.maps.MarkerImage('images/location.svg');
         var marker = new google.maps.Marker({
             icon: markerImage,
             position: mapMarkerCoord, 
             map: map,
-            title:"Чисто Строй"
+            title:"SCMC"
         });
         
         $(window).resize(function (){
