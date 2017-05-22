@@ -1,28 +1,43 @@
 .breadcrumbs {
-    padding: 16px 0 11px;
+    padding: 16px 0 14px;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     a,
     span {
+        display: inline-block;
         text-transform: uppercase;
-        span {
-            display: block;
-        }
     }
-    a {
+    [property='itemListElement'] {
+        display: inline-block;
+        vertical-align: middle;
         position: relative;
         padding-right: 20px;
         margin-right: 10px;
+        line-height: 1;
+        span {
+            display: block;
+        }
         &:after {
             font-family: 'FontAwesome';
             line-height: 10px;
             content: "\f105";
             display: block;
-            top: -1px;
             position: absolute;
             right: 0;
             height: 10px;
-            top: 0;
-            bottom: 0;
-            margin: auto;
+            top: 1px;
+            @media only screen and (max-width : 1200px) {
+                top: 2px;
+            }
+        }
+        &:last-child {
+            &:after {
+                display: none;
+                margin-right: 0;
+                padding-right: 0;
+            }
         }
     }
 }

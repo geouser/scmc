@@ -426,6 +426,10 @@
   }
 
   .navbar-nav {
+    > li.current-menu-item > a {
+       color: $navbar-default-link-hover-color;
+        background-color: $navbar-default-link-hover-bg;
+    }
     > li > a {
       color: $navbar-default-link-color;
       text-align: center;
