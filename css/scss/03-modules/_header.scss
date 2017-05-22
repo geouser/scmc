@@ -41,6 +41,9 @@
     background-image: url("../images/smartphone.png");
     background-repeat: no-repeat;
     background-position: 0 67%;
+    @media only screen and (max-width : 767px) {
+        display: none;
+    }
     a {
         display: block;
         text-align-last: right;

@@ -589,8 +589,7 @@
   // Darken the responsive nav toggle
   .navbar-toggle {
     border-color: $navbar-inverse-toggle-border-color;
-    &:hover,
-    &:focus {
+    &:hover {
       background-color: $navbar-inverse-toggle-hover-bg;
     }
     .icon-bar {
@@ -684,13 +683,22 @@
     &.hasScrolled {
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0px;
         width: 100%;
     }
     @media only screen and (max-width : 767px) {
       background: transparent;
-    }
-    @media only screen and (max-width : 480px) {
-      top: 100px;
+      top: 30px;
+      right: 0 !important;
+      left: auto;
+      width: 100%;
+      pointer-events: none;
+      .navbar-toggle {
+        margin-right: 15px;
+        pointer-events: auto;
+      }
+      .navbar-collapse {
+        pointer-events: auto;
+      }
     }
 }
