@@ -1,0 +1,78 @@
+.nav .menu-item {
+    position: relative;
+
+    .sub-menu {
+        padding-left: 0;
+        list-style: none;
+
+        @media (min-width: 768px) {
+            top: 100%;
+            left: 0;
+            width: 200px;
+            position: absolute;
+            transition: all 0.3s ease;
+            transform: translateY(10px);
+            opacity: 0;
+            visibility: hidden;    
+        }
+        
+
+        & > .menu-item {
+            @media (max-width: 768px) {
+                text-align: center;
+            }
+        }
+
+        & > .menu-item a {
+            display: block;
+            color: #fff;
+            background-color: $red;
+            padding: 10px 10px 7px 25px;
+            text-decoration: none;
+            position: relative;
+            -webkit-transition: all 0.3s ease;
+            -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
+            background-color: #ED000C;
+
+            @media (min-width: 768px) {
+                width: 100%;
+                border-bottom: 1px solid #a52328;
+            }
+            @media (max-width: 767px) {
+                padding-left: 10px
+            }
+
+            &:hover {
+                background-color: #a52328;
+            }
+
+            &:before {
+                font-family: 'FontAwesome';
+                line-height: 10px;
+                content: "\f105";
+                display: block;
+                position: absolute;
+                position: absolute;
+                left: 10px;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                -ms-transform: translateY(-50%);
+                -o-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
+        }
+
+        & > .menu-item.current-menu-item a {
+            background-color: #a52328;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        &:hover > .sub-menu {
+            opacity: 1;
+            visibility: visible;
+            transform: translate(0);
+        }    
+    }
+}

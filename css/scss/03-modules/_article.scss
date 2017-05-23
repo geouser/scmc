@@ -1,6 +1,27 @@
 .article {
     padding-bottom: 110px;
     padding-top: 10px;
+    font: 17px/36px "Arial";
+
+    & > * {
+        &:not(:last-child) {
+            margin-bottom: 36px;
+
+            @media (max-width: 991px) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    
+    @media only screen and (max-width : 991px) {
+        line-height: 1.6;
+        font-size: 15px;
+        padding: 40px 0;
+    }
+
+    @media only screen and (max-width : 480px) {
+        font-size: 13px;
+    }
     
     em {
         font: 19px/36px "Arial";
@@ -14,23 +35,5 @@
         @media only screen and (max-width : 480px) {
             font-size: 14px;
         }
-    }
-    p {
-        margin-bottom: 36px;
-        font: 17px/36px "Arial";
-        &:last-child {
-            margin-bottom: 0;
-        }
-        @media only screen and (max-width : 991px) {
-            line-height: 1.6;
-            font-size: 15px;
-            margin-bottom: 20px;
-        }
-        @media only screen and (max-width : 480px) {
-            font-size: 13px;
-        }
-    }
-    @media only screen and (max-width : 991px) {
-        padding: 40px 0;
     }
 }
