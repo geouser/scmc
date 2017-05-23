@@ -15,3 +15,79 @@
         }
     }
 }
+
+.sidebar {
+    width: 33.33333%;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: left;
+    @media (max-width: 991px) {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    & + main {
+        width: 66.66667%;
+        padding-left: 15px;
+        padding-right: 15px;
+        float: left;
+        @media (max-width: 991px) {
+            width: 100%;
+        }
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        li {
+            border-bottom: 1px solid #ddd;
+            background-color: #f2f2f2;
+        }
+        a {
+            position: relative;
+            display: block;
+            padding: 12px 15px 12px;
+            font-family: "Raleway";
+            font-weight: 500;
+            font-size: 17px;
+            background-color: #f2f2f2;
+            color: #555;
+            &:hover {
+                text-decoration: none;
+                color: #555;
+                background-color: #FCFCFC;
+            }
+        }
+    }
+    .textwidget {
+        padding: 12px 15px 12px;
+    }
+    #calendar_wrap {
+        padding: 12px 15px 12px;
+        caption {
+            font-family: "Raleway";
+            font-weight: 500;
+            font-size: 17px;
+        }
+        td {
+            padding: 6px 0;
+        }
+    }
+    #wp-calendar {
+        width: 100%;
+    }
+    .widgettitle {
+        font-family: "Raleway";
+        font-weight: 500;
+        font-size: 17px;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 12px 15px 12px;
+            color: #fff;
+        background-color: #225090;
+        border-color: #225090;
+    }
+}
+
+.sidebar-menu {
+    background-color: #f2f2f2;
+}
