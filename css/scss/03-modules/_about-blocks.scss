@@ -67,9 +67,14 @@
             font-family: "Raleway";
             font-weight: 500;
             font-size: 17px;
+            text-align: center;
+        }
+        th {
+            text-align: center;
         }
         td {
             padding: 6px 0;
+            text-align: center;
         }
     }
     #wp-calendar {
