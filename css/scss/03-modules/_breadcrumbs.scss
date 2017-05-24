@@ -41,3 +41,26 @@
         }
     }
 }
+
+.ar {
+    .breadcrumbs {
+        [property='itemListElement'] {
+            padding-right: 0px;
+            padding-left: 20px;
+            margin-right: 0px;
+            margin-left: 10px;
+            &:after {
+                font-family: 'FontAwesome';
+                right: auto;
+                left: 0;
+                content: "\f104";
+            }
+            &:last-child {
+                &:after {
+                    margin-left: 0;
+                    padding-left: 0;
+                }
+            }
+        }
+    }                                                                                                                                                                                                                                                                                                      
+}

@@ -54,3 +54,15 @@
 .map {
     height: 315px;
 }
+
+.ar {
+    .contacts-list {
+        padding-right: 0;
+        &__item {
+            .fa {
+                margin-right: 0;
+                margin-left: 15px;
+            }
+        }
+    }
+}

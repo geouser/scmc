@@ -10,9 +10,6 @@ body {
     font-family: $n;
     font-size: 14px;
     color: $text;
-    &.ar {
-      direction: rtl;
-    }
 }
 
 h1,
@@ -34,7 +31,9 @@ h3 {
   }
 }
 
-.block-title {
+.block-title,
+.panel-layout h2,
+.article h2 {
   color: #0667A0;
   font-size: 30px;
   font-weight: 800;
@@ -50,6 +49,17 @@ h3 {
   }
   @media only screen and (max-width : 480px) {
       font-size: 22px;
+  }
+}
+
+.ar {
+  .block-title,
+  .panel-layout h2,
+  .article h2   {
+    padding-left: 0px;
+    padding-right: 18px;
+    border: none;
+    border-right: 4px solid $red;
   }
 }
 
