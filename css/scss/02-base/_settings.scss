@@ -10,6 +10,9 @@ body {
     font-family: $n;
     font-size: 14px;
     color: $text;
+    &.ar {
+      direction: rtl;
+    }
 }
 
 h1,
