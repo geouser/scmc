@@ -1,0 +1,39 @@
+.job-details__table {
+    width: 100%;
+    font-size: 16px;
+    margin-bottom: 50px;
+
+    @media (max-width: 767px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 450px) {
+        font-size: 13px;
+    }
+
+    .table-label {
+        font-weight: 700;
+        width: 250px;
+
+        @media (max-width: 767px) {
+            width: 130px;
+        }
+    }
+
+    tr:nth-child(even) {
+        background-color: #eee;
+    }
+
+    td {
+        padding: 10px 5px;
+        vertical-align: top;
+
+        @media (max-width: 450px) {
+            padding: 8px 2px;
+        }
+    }
+
+    .fa {
+        color: $red;
+    }
+}

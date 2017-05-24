@@ -1,7 +1,18 @@
+.career-article {
+    padding: 0 0 50px 0;
+}
 .jobs-table {
     width: 100%;
     text-align: center;
     font-size: 16px;
+
+    @media (max-width: 1200px) {
+        font-size: 15px;
+    }
+
+    @media (max-width: 991px) {
+        font-size: 13px;
+    }
 
     thead {
         background-color: $blue;
@@ -16,12 +27,30 @@
 
     tbody {
         font-size: 15px;
+
+        @media (max-width: 1200px) {
+            font-size: 14px;
+
+            .btn {
+                padding: 5px;
+                font-size: 11px;
+            }
+        }
+
+        @media (max-width: 991px) {
+            font-size: 12px;
+        }
+
         tr:nth-child(even) {
             background-color: #eee;
         }
 
         td {
             padding: 10px 5px;
+
+            @media (max-width: 1200px) {
+                padding: 8px 2px;
+            }
         }
     }
 }
@@ -34,7 +63,7 @@
     }
 
     &__title {
-        background-color: $red;
+        background-color: $blue;
         padding: 10px 15px;
         color: #fff;
         font-size: 16px;
@@ -44,11 +73,13 @@
 
     &__table {
         width: 100%;
-        font-size: 14px;
-        border: 15px solid #fff;
+        font-size: 13px;
+        margin: 10px 0 10px;
 
         .table-label {
             padding-left: 5px;
+            font-weight: 700;
+            width: 130px;
         }
 
         tr:nth-child(even) {
@@ -57,6 +88,7 @@
 
         td {
             padding: 5px 0;
+            vertical-align: top;
         }
 
         .fa {
