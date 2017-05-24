@@ -45,7 +45,7 @@
     @media (max-width: 1200px) {
         font-size: 14px;
     }
-    
+
     &:not(:last-child) {
         margin-bottom: 50px;
     }
@@ -61,6 +61,25 @@
     h5,
     h6 {
         color: $blue;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+    h2 {
+        font-size: 1.4em;
+    }
+    h3 {
+        font-size: 1.35em;
+    }
+    h4 {
+        font-size: 1.3em;
+    }
+    h5 {
+        font-size: 1.2em;
+    }
+    h6 {
+        font-size: 1.15em;
     }
 }
 
