@@ -181,6 +181,11 @@ h3 {
     display: inline-block;
     vertical-align: middle;
     margin: 0 4px;
+    a {
+      img {
+        width: 20px;
+      }
+    }
   }
 }
 // lAYOUT
