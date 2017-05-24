@@ -107,6 +107,9 @@
       }
 
       &.current-menu-item {
+        a {
+          color: #fff;
+        }
         a:before {
           color: #fff;
         }
