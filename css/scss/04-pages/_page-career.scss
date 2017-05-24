@@ -15,12 +15,52 @@
     }
 
     tbody {
+        font-size: 15px;
         tr:nth-child(even) {
             background-color: #eee;
         }
 
         td {
             padding: 10px 5px;
+        }
+    }
+}
+
+
+.job-item {
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
+    }
+
+    &__title {
+        background-color: $red;
+        padding: 10px 15px;
+        color: #fff;
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    &__table {
+        width: 100%;
+        font-size: 14px;
+        border: 15px solid #fff;
+
+        .table-label {
+            padding-left: 5px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #eee;
+        }
+
+        td {
+            padding: 5px 0;
+        }
+
+        .fa {
+            color: $red;
         }
     }
 }
