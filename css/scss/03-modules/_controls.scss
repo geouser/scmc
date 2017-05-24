@@ -86,6 +86,10 @@
     margin-bottom: 0;
 }
 
+.ar .form-control {
+    text-align: right;
+}
+
 .file {
     @extend .form-control;
     position: relative;
@@ -136,5 +140,18 @@
         padding: 0 55px 0 12px;
         text-align: left;
         line-height: 40px;
+    }
+}
+
+.ar .file {
+    span {
+        text-align: right;
+        padding: 0 12px 0 55px;
+    }
+
+    &:after {
+        right: auto;
+        left: 20px;
+        transform: translate(-50%, -50%);
     }
 }
