@@ -1,0 +1,15 @@
+.popup {
+    &.apply {
+        width: 400px;
+        max-width: 100%;
+    }
+
+    &-heading {
+        text-align: center;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+}
+    

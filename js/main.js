@@ -25,6 +25,28 @@ function exist(el){
 
 jQuery(document).ready(function($) {
 
+    $('input[type=file]').each(function(index, el) {
+        $(this).on('change', function(event) {
+            event.preventDefault();
+            var placeholder = $(this).siblings('.placeholder');
+        
+            if ( this.files.length > 0 ) {
+                if ( this.files[0].size < 5000000 ) {
+                    var filename = $(this).val().split('/').pop().split('\\').pop();
+                    if ( filename == '' ) {
+                        filename = placeholder.attr('data-label');
+                    }
+                    placeholder.text(filename);
+                } else {
+                    alert('Maximum file size is 5Mb');
+                }    
+            } else {
+                placeholder.text( placeholder.attr('data-label') );
+            }
+            
+        });
+    });
+
 
     /*---------------------------
                                   Owl carousel
@@ -139,6 +161,41 @@ jQuery(document).ready(function($) {
             }
     });
 
+
+
+
+    /*---------------------------
+                                  Fancybox
+    ---------------------------*/
+    $('.fancybox').fancybox({
+        
+    });
+
+
+
+    /*----------------------------
+                              SEND FORM
+    -------------------------*/
+    /**
+     *
+     * Open popup
+     *
+     * @param popup {String} jQuery object (#popup)
+     *
+     * @return n/a
+     *
+    */
+    function openPopup(popup){
+        $.fancybox.open([
+            {
+                src  : popup,
+                type: 'inline',
+                opts : {}
+            }
+        ], {
+            loop : false
+        });
+    }
 
 
     $('.form').on('submit', function(event) {
